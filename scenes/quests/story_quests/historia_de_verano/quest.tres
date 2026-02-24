@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Quest" format=3 uid="uid://ojoarcdoxs2f"]
+
+[ext_resource type="Script" uid="uid://dts1hwdy3phin" path="res://scenes/menus/storybook/components/quest.gd" id="1_lgdov"]
+
+[resource]
+script = ExtResource("1_lgdov")
+title = "Historia de verano"
+first_scene = "uid://c6g4av2i3uiif"
+metadata/_custom_type_script = "uid://dts1hwdy3phin"

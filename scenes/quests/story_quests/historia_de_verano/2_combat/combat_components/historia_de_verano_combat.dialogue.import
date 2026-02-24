@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://ce2ahnleyaa7j"
+path="res://.godot/imported/historia_de_verano_combat.dialogue-e22f39ecf3653874146b7e770dbfe1f3.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/historia_de_verano/2_combat/combat_components/historia_de_verano_combat.dialogue"
+dest_files=["res://.godot/imported/historia_de_verano_combat.dialogue-e22f39ecf3653874146b7e770dbfe1f3.tres"]
+
+[params]
+
+defaults=true

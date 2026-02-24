@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dqw4xvejdh5od"
+path="res://.godot/imported/historia_de_verano_stealth.dialogue-fa0aea5cb06723948b8175fdd0f8a957.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/historia_de_verano/1_stealth/stealth_components/historia_de_verano_stealth.dialogue"
+dest_files=["res://.godot/imported/historia_de_verano_stealth.dialogue-fa0aea5cb06723948b8175fdd0f8a957.tres"]
+
+[params]
+
+defaults=true

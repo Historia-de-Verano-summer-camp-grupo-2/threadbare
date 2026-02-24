@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://3o8gs2niexld"
+path="res://.godot/imported/historia_de_verano_outro.dialogue-00378a555b460fa7a277c9ae097dd0d0.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/historia_de_verano/4_outro/outro_components/historia_de_verano_outro.dialogue"
+dest_files=["res://.godot/imported/historia_de_verano_outro.dialogue-00378a555b460fa7a277c9ae097dd0d0.tres"]
+
+[params]
+
+defaults=true

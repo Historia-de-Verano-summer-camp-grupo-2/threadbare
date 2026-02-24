@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://oe34rw85d2qv"
+path="res://.godot/imported/historia_de_verano_sequence_puzzle.dialogue-171624679a052b63067c988b3869e897.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/historia_de_verano/3_sequence_puzzle/historia_de_verano_sequence_puzzle.dialogue"
+dest_files=["res://.godot/imported/historia_de_verano_sequence_puzzle.dialogue-171624679a052b63067c988b3869e897.tres"]
+
+[params]
+
+defaults=true
