@@ -121,7 +121,8 @@ dialogue_title = &"well_done"
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=738326047]
 z_index = -20
-scroll_offset = Vector2(0.5, 0.5)
+scroll_scale = Vector2(0.5, 0.5)
+repeat_size = Vector2(768, 0)
 repeat_times = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1249983594]
