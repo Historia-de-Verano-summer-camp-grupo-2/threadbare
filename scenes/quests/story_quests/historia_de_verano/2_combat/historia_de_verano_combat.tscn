@@ -5,8 +5,6 @@
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="3_xhyib"]
 [ext_resource type="TileSet" uid="uid://ccrhsrbw8o2nx" path="res://scenes/quests/story_quests/historia_de_verano/tiles/historia_de_verano_exterior_floors.tres" id="4_6rcmj"]
 [ext_resource type="TileSet" uid="uid://dparmfcp4lil0" path="res://scenes/quests/story_quests/historia_de_verano/tiles/historia_de_verano_elevation.tres" id="5_h3ud3"]
-[ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="6_8eips"]
-[ext_resource type="SpriteFrames" uid="uid://p6hhj062oe3s" path="res://scenes/quests/story_quests/historia_de_verano/player_components/historia_de_verano_player.tres" id="7_tlpt7"]
 [ext_resource type="PackedScene" uid="uid://b82nsrh332syj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/throwing_enemy.tscn" id="8_bxoa3"]
 [ext_resource type="SpriteFrames" uid="uid://xpocx2a0lg06" path="res://scenes/quests/story_quests/historia_de_verano/2_combat/combat_components/historia_de_verano_throwing_enemy.tres" id="9_xxs07"]
 [ext_resource type="PackedScene" uid="uid://ctdh7ml4h8s8j" path="res://scenes/quests/story_quests/historia_de_verano/2_combat/combat_components/historia_de_verano_projectile.tscn" id="10_gfvyu"]
@@ -14,6 +12,7 @@
 [ext_resource type="SpriteFrames" uid="uid://bt0btlspdout4" path="res://scenes/quests/story_quests/historia_de_verano/2_combat/combat_components/historia_de_verano_target_spriteframes.tres" id="12_xx48c"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="13_7j2hr"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="14_7tw8e"]
+[ext_resource type="PackedScene" uid="uid://fyb4qhy4jyot" path="res://scenes/quests/story_quests/historia_de_verano/player_components/player_gato.tscn" id="14_m5f8b"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="15_akp18"]
 
 [sub_resource type="Resource" id="Resource_w8y82"]
@@ -46,10 +45,9 @@ tile_set = ExtResource("5_h3ud3")
 [node name="OnTheGround" type="Node2D" parent="." unique_id=410171371]
 y_sort_enabled = true
 
-[node name="Player" parent="OnTheGround" unique_id=1799818537 instance=ExtResource("6_8eips")]
-position = Vector2(348, 335)
+[node name="Player" parent="OnTheGround" unique_id=296354958 instance=ExtResource("14_m5f8b")]
+position = Vector2(320, 360)
 mode = 1
-sprite_frames = ExtResource("7_tlpt7")
 
 [node name="ThrowingNPC" parent="OnTheGround" unique_id=2065424633 instance=ExtResource("8_bxoa3")]
 position = Vector2(857, 300)
