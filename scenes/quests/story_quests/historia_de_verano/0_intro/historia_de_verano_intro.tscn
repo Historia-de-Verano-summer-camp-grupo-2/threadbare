@@ -144,7 +144,7 @@ libraries/ = SubResource("AnimationLibrary_7ql1x")
 script = ExtResource("4_va788")
 dialogue = ExtResource("5_xycnl")
 animation_player = NodePath("../OnTheGround/AnimationPlayer")
-next_scene = "uid://c2n57fpylx7tl"
+next_scene = "uid://cg8beka1u6xff"
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
 [node name="Rock" parent="." unique_id=912112339 instance=ExtResource("6_h7vfl")]
