@@ -1,13 +1,13 @@
-[gd_scene format=3 uid="uid://fyb4qhy4jyot"]
+[gd_scene format=3 uid="uid://d3rl86ycd8vw8"]
 
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="1_ytdjf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ytdjf"]
-size = Vector2(62.000008, 32)
+size = Vector2(54.000008, 32)
 
 [node name="Player" unique_id=296354958 instance=ExtResource("1_ytdjf")]
 position = Vector2(-29, -12)
 
 [node name="CollisionShape2D" parent="." index="3" unique_id=874691694]
-position = Vector2(-7.6293945e-05, -21.000004)
+position = Vector2(0, -20)
 shape = SubResource("RectangleShape2D_ytdjf")
