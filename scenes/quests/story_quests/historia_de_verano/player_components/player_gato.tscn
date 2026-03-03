@@ -2,4 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="1_ytdjf"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ytdjf"]
+size = Vector2(62.000008, 32)
+
 [node name="Player" unique_id=296354958 instance=ExtResource("1_ytdjf")]
+position = Vector2(-29, -12)
+
+[node name="CollisionShape2D" parent="." index="3" unique_id=874691694]
+position = Vector2(-7.6293945e-05, -21.000004)
+shape = SubResource("RectangleShape2D_ytdjf")
