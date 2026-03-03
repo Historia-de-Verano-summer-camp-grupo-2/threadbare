@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="3_xhyib"]
 [ext_resource type="TileSet" uid="uid://ccrhsrbw8o2nx" path="res://scenes/quests/story_quests/historia_de_verano/tiles/historia_de_verano_exterior_floors.tres" id="4_6rcmj"]
 [ext_resource type="TileSet" uid="uid://dparmfcp4lil0" path="res://scenes/quests/story_quests/historia_de_verano/tiles/historia_de_verano_elevation.tres" id="5_h3ud3"]
+[ext_resource type="SpriteFrames" uid="uid://dxvdyxkju1f02" path="res://scenes/quests/story_quests/historia_de_verano/assets/player/player-frames-gato.tres" id="7_3n6ea"]
 [ext_resource type="PackedScene" uid="uid://b82nsrh332syj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/throwing_enemy.tscn" id="8_bxoa3"]
 [ext_resource type="SpriteFrames" uid="uid://xpocx2a0lg06" path="res://scenes/quests/story_quests/historia_de_verano/2_combat/combat_components/historia_de_verano_throwing_enemy.tres" id="9_xxs07"]
 [ext_resource type="PackedScene" uid="uid://ctdh7ml4h8s8j" path="res://scenes/quests/story_quests/historia_de_verano/2_combat/combat_components/historia_de_verano_projectile.tscn" id="10_gfvyu"]
@@ -12,7 +13,7 @@
 [ext_resource type="SpriteFrames" uid="uid://bt0btlspdout4" path="res://scenes/quests/story_quests/historia_de_verano/2_combat/combat_components/historia_de_verano_target_spriteframes.tres" id="12_xx48c"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="13_7j2hr"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="14_7tw8e"]
-[ext_resource type="PackedScene" uid="uid://b8igx7c2mq8ip" path="res://scenes/quests/story_quests/historia_de_verano/player_components/player_gato.tscn" id="14_m5f8b"]
+[ext_resource type="PackedScene" path="res://scenes/quests/story_quests/historia_de_verano/player_components/player_gato.tscn" id="14_m5f8b"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="15_akp18"]
 [ext_resource type="Texture2D" uid="uid://w3gxl52o7oxq" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/noonbackground.png" id="15_bus0n"]
 
@@ -54,6 +55,7 @@ y_sort_enabled = true
 z_index = 1
 position = Vector2(-128, 816)
 mode = 1
+sprite_frames = ExtResource("7_3n6ea")
 
 [node name="Camera2D" type="Camera2D" parent="OnTheGround/Player" unique_id=881414767]
 position = Vector2(0, -16)
