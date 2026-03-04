@@ -5,5 +5,22 @@
 [resource]
 script = ExtResource("1_lgdov")
 title = "Historia de verano"
+description = "En un pequeño rincón del bosque
+vive un gato curioso.
+
+No busca aventuras.
+Pero su curiosidad siempre
+termina encontrándolas.
+
+Los árboles guardan caminos,
+las ramas esconden secretos,
+y el viento a veces trae
+pequeñas sorpresas.
+
+Hoy parece un día cualquiera.
+
+Pero incluso el día más tranquilo
+puede ser el comienzo
+de algo inesperado."
 first_scene = "uid://c6g4av2i3uiif"
 metadata/_custom_type_script = "uid://dts1hwdy3phin"
