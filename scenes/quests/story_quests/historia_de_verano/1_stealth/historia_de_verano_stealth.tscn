@@ -485,9 +485,9 @@ texture = ExtResource("19_t1yxy")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2119819485]
 z_index = 2
-position = Vector2(688.00006, -1784.0001)
+position = Vector2(696.00006, -1920)
 rotation = 3.1415927
-scale = Vector2(23.323027, 15.687495)
+scale = Vector2(23.323027, 9.361601)
 texture = ExtResource("20_x4ddw")
 
 [editable path="EnemyGuards/Guard1-GoingBackAndForth"]
