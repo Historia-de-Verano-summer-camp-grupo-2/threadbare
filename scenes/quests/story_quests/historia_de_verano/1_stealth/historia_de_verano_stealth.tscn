@@ -94,9 +94,9 @@ point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_jexhp"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 352, -470, 0, 0, 0, 0, 1264, -470)
+"points": PackedVector2Array(0, 0, 0, 0, 352, -470, 0, 0, 0, 0, 1264, -470, 0, 0, 0, 0, 992, -472, 0, 0, 0, 0, 864, -472)
 }
-point_count = 2
+point_count = 4
 
 [sub_resource type="Curve2D" id="Curve2D_0vga2"]
 _data = {
