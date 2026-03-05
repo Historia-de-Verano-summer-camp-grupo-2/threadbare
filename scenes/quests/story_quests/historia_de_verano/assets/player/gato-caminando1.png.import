@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dovppgmkmfjb1"
-path="res://.godot/imported/Surplus Trees.png-aa88772257ccde0d3d5d26d9bf3f5645.ctex"
+uid="uid://out5830jkplw"
+path="res://.godot/imported/gato-caminando1.png-820e82bd5440b347c6f0009762cc14f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/historia_de_verano/assets/tiles/Surplus Trees.png"
-dest_files=["res://.godot/imported/Surplus Trees.png-aa88772257ccde0d3d5d26d9bf3f5645.ctex"]
+source_file="res://scenes/quests/story_quests/historia_de_verano/assets/player/gato-caminando1.png"
+dest_files=["res://.godot/imported/gato-caminando1.png-820e82bd5440b347c6f0009762cc14f7.ctex"]
 
 [params]
 

@@ -16,11 +16,69 @@
 [ext_resource type="Resource" uid="uid://bprjvghal3c48" path="res://scenes/quests/story_quests/historia_de_verano/1_stealth/stealth_components/historia_de_verano_collected.dialogue" id="13_q3g1t"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="14_4qmlq"]
 [ext_resource type="Resource" uid="uid://dqw4xvejdh5od" path="res://scenes/quests/story_quests/historia_de_verano/1_stealth/stealth_components/historia_de_verano_stealth.dialogue" id="15_jpd26"]
-[ext_resource type="Texture2D" uid="uid://dahet56207utp" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/allbackgroundstars.png" id="17_my5bl"]
-[ext_resource type="Texture2D" uid="uid://bros88j71s0sp" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/0 Forest parallax vertical forest tree front.png" id="18_x4ddw"]
-[ext_resource type="Texture2D" uid="uid://7oxigfslsjip" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/1 Forest parallax vertical forest low.png" id="19_jexhp"]
-[ext_resource type="Texture2D" uid="uid://dg12fa3hp8mq4" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/2 Forest parallax vertical forest mid.png" id="20_0vga2"]
-[ext_resource type="Texture2D" uid="uid://dovppgmkmfjb1" path="res://scenes/quests/story_quests/historia_de_verano/assets/tiles/Surplus Trees.png" id="21_jexhp"]
+[ext_resource type="Texture2D" uid="uid://cepg1o3ihp055" path="res://assets/first_party/collectibles/world_spirit.png" id="15_qk84u"]
+[ext_resource type="PackedScene" uid="uid://bwxfbqq2dm5ax" path="res://scenes/quests/story_quests/historia_de_verano/1_stealth/background.tscn" id="17_my5bl"]
+
+[sub_resource type="Animation" id="Animation_t1yxy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(544, -2624)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:zoom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_qk84u"]
+resource_name = "pane"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(544, -2624), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:zoom")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.01, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(2.5, 2.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t1yxy"]
+_data = {
+&"RESET": SubResource("Animation_t1yxy"),
+&"pane": SubResource("Animation_qk84u")
+}
 
 [sub_resource type="Curve2D" id="Curve2D_i4q3v"]
 _data = {
@@ -30,25 +88,25 @@ point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_l34br"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 260, 24, 0, 0, 1, 10, 1340, 24)
+"points": PackedVector2Array(0, 0, 0, 0, 268, 50, 0, 0, 0, 0, 1364, 50)
 }
 point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_jexhp"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1248, -480, 0, 0, 0, 0, 224, -480)
+"points": PackedVector2Array(0, 0, 0, 0, 352, -470, 0, 0, 0, 0, 1264, -470)
 }
 point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_0vga2"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 224, -736, 0, 0, 0, 0, 1248, -736, 0, 0, 0, 0, 736, -736, 0, 0, 0, 0, 800, -736)
+"points": PackedVector2Array(0, 0, 0, 0, 224, -736, 0, 0, 0, 0, 1248, -736, 0, 0, 0, 0, 736, -736, 0, 0, 0, 0, 800, -736, 0, 0, 0, 0, 480, -736, 0, 0, 0, 0, 544, -736)
 }
-point_count = 4
+point_count = 6
 
 [sub_resource type="Curve2D" id="Curve2D_dyefq"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 608, -1064, 0, 0, 0, 0, 1112, -1064)
+"points": PackedVector2Array(0, 0, 0, 0, 608, -1040, 0, 0, 0, 0, 1120, -1042)
 }
 point_count = 2
 
@@ -58,6 +116,9 @@ size = Vector2(168.25, 122)
 [sub_resource type="Resource" id="Resource_q6f1e"]
 script = ExtResource("12_vi6to")
 metadata/_custom_type_script = "uid://bgmwplmj3bfls"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qk84u"]
+load_path = "res://.godot/imported/Surplus Trees.png-aa88772257ccde0d3d5d26d9bf3f5645.ctex"
 
 [node name="HistoriaDeVeranoStealth" type="Node2D" unique_id=528815133]
 y_sort_enabled = true
@@ -91,7 +152,7 @@ tile_set = ExtResource("4_l34br")
 [node name="Tree" type="TileMapLayer" parent="TileMapLayers" unique_id=1405098176]
 modulate = Color(0.45570368, 0.27004534, 0.09941431, 1)
 z_index = -3
-tile_map_data = PackedByteArray("AAATAPn/BAACAAAAAAASAPn/BAACAAAAAAARAAUABAACAAAAAAASAAUABAACAAAAAAAPAPX/BAACAAAAAAATAPX/BAACAAAAAAAEAPP/BAABAAEAAAADAPP/BAABAAEAAAADAPL/BAABAAEAAAADAPH/BAABAAEAAAACAPH/BAABAAEAAAABAPH/BAABAAEAAAAGAAMABAABAAEAAAAGAAIABAABAAEAAAAGAAEABAABAAEAAAAFAAEABAABAAEAAAAEAAEABAABAAEAAAAEAAAABAABAAEAAAAEAP//BAABAAEAAAAEAP7/BAABAAEAAAAEAP3/BAABAAEAAAAEAPz/BAABAAEAAAAFAP3/BAABAAEAAAAGAP3/BAABAAEAAAAHAP3/BAABAAEAAAAIAP3/BAABAAEAAAAJAP3/BAABAAEAAAAKAP3/BAABAAEAAAALAP3/BAABAAEAAAAMAP3/BAABAAEAAAANAP3/BAABAAEAAAAOAP3/BAABAAEAAAAPAP3/BAABAAEAAAAQAP3/BAABAAEAAAARAPv/BAABAAEAAAARAPr/BAABAAEAAAARAPn/BAABAAEAAAAQAPn/BAABAAEAAAAPAPn/BAABAAEAAAAOAPn/BAABAAEAAAAOAPj/BAABAAEAAAAOAPf/BAABAAEAAAAOAPb/BAABAAEAAAAOAPX/BAABAAEAAAAOAPT/BAABAAEAAAANAPT/BAABAAEAAAANAPP/BAABAAEAAAANAPL/BAABAAEAAAANAPH/BAABAAEAAAANAPD/BAABAAEAAAANAO//BAABAAEAAAANAO7/BAABAAEAAAANAO3/BAABAAEAAAAMAO3/BAABAAEAAAALAO3/BAABAAEAAAAKAO3/BAABAAEAAAAJAO3/BAABAAEAAAAIAO3/BAABAAEAAAAIAO7/BAABAAEAAAAHAO7/BAABAAEAAAAGAO7/BAABAAEAAAAFAO7/BAABAAEAAAAEAO7/BAABAAEAAAAIAO//BAABAAEAAAAIAPD/BAABAAEAAAAJAPD/BAABAAEAAAAJAPH/BAABAAEAAAAJAPL/BAABAAEAAAAIAPL/BAABAAEAAAAHAPL/BAABAAEAAAAGAPL/BAABAAEAAAAFAPL/BAABAAEAAAAKAPD/BAABAAEAAAALAPD/BAABAAEAAAAMAPD/BAABAAEAAAAOAO3/BAABAAEAAAAPAO3/BAABAAEAAAAQAO3/BAABAAEAAAARAO3/BAABAAEAAAASAO3/BAABAAEAAAASAO7/BAABAAEAAAASAO//BAABAAEAAAASAPD/BAABAAEAAAARAPD/BAABAAEAAAAQAPD/BAABAAEAAAAPAPD/BAABAAEAAAAOAPD/BAABAAEAAAAPAPH/BAABAAEAAAARAPH/BAABAAEAAAARAPL/BAABAAEAAAAQAPL/BAABAAEAAAARAPP/BAABAAEAAAARAPT/BAABAAEAAAARAPX/BAABAAEAAAAQAPX/BAABAAEAAAAQAPb/BAABAAEAAAASAPX/BAABAAEAAAASAPL/BAABAAEAAAATAPD/BAABAAEAAAATAPH/BAABAAEAAAAUAPD/BAABAAEAAAAVAPD/BAABAAEAAAAWAPD/BAABAAEAAAAXAPD/BAABAAEAAAAYAPD/BAABAAEAAAATAO7/BAABAAEAAAAUAO7/BAABAAEAAAAUAO3/BAABAAEAAAAVAO3/BAABAAEAAAAVAOz/BAABAAEAAAAWAOz/BAABAAEAAAANAPX/BAABAAEAAAAMAPX/BAABAAEAAAALAPX/BAABAAEAAAAKAPX/BAABAAEAAAAJAPX/BAABAAEAAAAJAPT/BAABAAEAAAAIAPX/BAABAAEAAAAHAPX/BAABAAEAAAAGAPX/BAABAAEAAAAGAPT/BAABAAEAAAAFAPX/BAABAAEAAAAEAPX/BAABAAEAAAADAPX/BAABAAEAAAAGAPb/BAABAAEAAAAGAPf/BAABAAEAAAAGAPj/BAABAAEAAAAGAPn/BAABAAEAAAAFAPn/BAABAAEAAAAEAPn/BAABAAEAAAADAPn/BAABAAEAAAADAPj/BAABAAEAAAACAPj/BAABAAEAAAACAPf/BAABAAEAAAABAPf/BAABAAEAAAAAAPf/BAABAAEAAAAHAPn/BAABAAEAAAAIAPn/BAABAAEAAAAJAPn/BAABAAEAAAAJAPj/BAABAAEAAAAJAPf/BAABAAEAAAAJAPb/BAABAAEAAAAKAPn/BAABAAEAAAALAPn/BAABAAEAAAAMAPn/BAABAAEAAAANAPn/BAABAAEAAAARAP3/BAABAAEAAAASAP3/BAABAAEAAAATAP3/BAABAAEAAAATAPz/BAABAAEAAAAUAPz/BAABAAEAAAAUAPv/BAABAAEAAAAUAPr/BAABAAEAAAAUAPn/BAABAAEAAAAUAPj/BAABAAEAAAAUAPf/BAABAAEAAAAVAPf/BAABAAEAAAAVAPb/BAABAAEAAAAWAPb/BAABAAEAAAATAP7/BAABAAEAAAATAP//BAABAAEAAAATAAAABAABAAEAAAATAAEABAABAAEAAAASAAEABAABAAEAAAARAAEABAABAAEAAAAQAAEABAABAAEAAAAPAAEABAABAAEAAAAOAAEABAABAAEAAAANAAEABAABAAEAAAAMAAEABAABAAEAAAALAAEABAABAAEAAAAKAAEABAABAAEAAAAJAAEABAABAAEAAAAIAAEABAABAAEAAAAHAAEABAABAAEAAAAKAAIABAABAAEAAAALAAMABAABAAEAAAALAAIABAABAAEAAAALAAQABAABAAEAAAALAAUABAABAAEAAAAKAAUABAABAAEAAAAJAAUABAABAAEAAAAIAAUABAABAAEAAAAHAAUABAABAAEAAAAGAAUABAABAAEAAAAIAAYABAABAAEAAAAIAAcABAABAAEAAAAHAAcABAABAAEAAAAHAAgABAABAAEAAAALAAYABAABAAEAAAALAAcABAABAAEAAAALAAgABAABAAEAAAAMAAUABAABAAEAAAANAAUABAABAAEAAAAOAAUABAABAAEAAAAPAAUABAABAAEAAAAQAAUABAABAAEAAAAQAAYABAABAAEAAAAQAAcABAABAAEAAAAQAAgABAABAAEAAAAUAAEABAABAAEAAAAVAAEABAABAAEAAAAVAAIABAABAAEAAAAVAAMABAABAAEAAAAVAAQABAABAAEAAAAVAAUABAABAAEAAAAUAAUABAABAAEAAAATAAUABAABAAEAAAATAAYABAABAAEAAAATAAcABAABAAEAAAAUAAcABAABAAEAAAAUAAgABAABAAEAAAAVAAgABAABAAEAAAAWAAQABAABAAEAAAAXAAQABAABAAEAAAAXAAMABAABAAEAAAAYAAMABAABAAEAAAADAAEABAABAAEAAAAMAAIABAABAAEAAAAFAAIABAABAAEAAAAFAAMABAABAAEAAAAFAAQABAABAAEAAAAFAAUABAABAAEAAAACAAEABAABAAEAAAABAAEABAABAAEAAAAAAAEABAABAAEAAAAAAAAABAABAAEAAAD//wAABAABAAEAAAARAPb/BAABAAEAAAAUAPX/BAABAAEAAAAVAPX/BAABAAEAAAALAAAABAABAAEAAAABAPT/BAABAAEAAAACAPX/BAABAAEAAAASAPv/BAABAAEAAAASAPz/BAABAAEAAAAAAPT/BAABAAEAAAABAPX/BAABAAEAAAA=")
+tile_map_data = PackedByteArray("AAATAPn/BAACAAAAAAASAPn/BAACAAAAAAARAAUABAACAAAAAAASAAUABAACAAAAAAAPAPX/BAACAAAAAAATAPX/BAACAAAAAAAEAPP/BAABAAEAAAADAPP/BAABAAEAAAADAPL/BAABAAEAAAADAPH/BAABAAEAAAACAPH/BAABAAEAAAABAPH/BAABAAEAAAAGAAMABAABAAEAAAAGAAIABAABAAEAAAAGAAEABAABAAEAAAAFAAEABAABAAEAAAAEAAEABAABAAEAAAAEAAAABAABAAEAAAAEAP//BAABAAEAAAAEAP7/BAABAAEAAAAEAP3/BAABAAEAAAAEAPz/BAABAAEAAAAFAP3/BAABAAEAAAAGAP3/BAABAAEAAAAHAP3/BAABAAEAAAAIAP3/BAABAAEAAAAJAP3/BAABAAEAAAAKAP3/BAABAAEAAAALAP3/BAABAAEAAAAMAP3/BAABAAEAAAANAP3/BAABAAEAAAAOAP3/BAABAAEAAAAPAP3/BAABAAEAAAAQAP3/BAABAAEAAAARAPv/BAABAAEAAAARAPr/BAABAAEAAAARAPn/BAABAAEAAAAQAPn/BAABAAEAAAAPAPn/BAABAAEAAAAOAPn/BAABAAEAAAAOAPj/BAABAAEAAAAOAPf/BAABAAEAAAAOAPb/BAABAAEAAAAOAPX/BAABAAEAAAAOAPT/BAABAAEAAAANAPT/BAABAAEAAAANAPP/BAABAAEAAAANAPL/BAABAAEAAAANAPH/BAABAAEAAAANAPD/BAABAAEAAAANAO//BAABAAEAAAANAO7/BAABAAEAAAANAO3/BAABAAEAAAAMAO3/BAABAAEAAAALAO3/BAABAAEAAAAKAO3/BAABAAEAAAAJAO3/BAABAAEAAAAIAO3/BAABAAEAAAAIAO7/BAABAAEAAAAHAO7/BAABAAEAAAAGAO7/BAABAAEAAAAFAO7/BAABAAEAAAAEAO7/BAABAAEAAAAIAO//BAABAAEAAAAIAPD/BAABAAEAAAAJAPD/BAABAAEAAAAJAPH/BAABAAEAAAAJAPL/BAABAAEAAAAIAPL/BAABAAEAAAAHAPL/BAABAAEAAAAGAPL/BAABAAEAAAAFAPL/BAABAAEAAAAKAPD/BAABAAEAAAALAPD/BAABAAEAAAAMAPD/BAABAAEAAAAOAO3/BAABAAEAAAAPAO3/BAABAAEAAAAQAO3/BAABAAEAAAARAO3/BAABAAEAAAASAO3/BAABAAEAAAASAO7/BAABAAEAAAASAO//BAABAAEAAAASAPD/BAABAAEAAAARAPD/BAABAAEAAAAQAPD/BAABAAEAAAAPAPD/BAABAAEAAAAOAPD/BAABAAEAAAARAPX/BAABAAEAAAAQAPX/BAABAAEAAAAQAPb/BAABAAEAAAASAPX/BAABAAEAAAATAPD/BAABAAEAAAAUAPD/BAABAAEAAAAVAPD/BAABAAEAAAAWAPD/BAABAAEAAAAXAPD/BAABAAEAAAAYAPD/BAABAAEAAAATAO7/BAABAAEAAAAUAO7/BAABAAEAAAAUAO3/BAABAAEAAAAVAO3/BAABAAEAAAAVAOz/BAABAAEAAAAWAOz/BAABAAEAAAANAPX/BAABAAEAAAAMAPX/BAABAAEAAAALAPX/BAABAAEAAAAKAPX/BAABAAEAAAAJAPX/BAABAAEAAAAJAPT/BAABAAEAAAAIAPX/BAABAAEAAAAHAPX/BAABAAEAAAAGAPX/BAABAAEAAAAGAPT/BAABAAEAAAAFAPX/BAABAAEAAAAEAPX/BAABAAEAAAADAPX/BAABAAEAAAAGAPb/BAABAAEAAAAGAPf/BAABAAEAAAAGAPj/BAABAAEAAAAGAPn/BAABAAEAAAAFAPn/BAABAAEAAAAEAPn/BAABAAEAAAADAPn/BAABAAEAAAADAPj/BAABAAEAAAACAPj/BAABAAEAAAACAPf/BAABAAEAAAABAPf/BAABAAEAAAAAAPf/BAABAAEAAAAHAPn/BAABAAEAAAAIAPn/BAABAAEAAAAJAPn/BAABAAEAAAAJAPj/BAABAAEAAAAJAPf/BAABAAEAAAAJAPb/BAABAAEAAAAKAPn/BAABAAEAAAALAPn/BAABAAEAAAAMAPn/BAABAAEAAAANAPn/BAABAAEAAAARAP3/BAABAAEAAAASAP3/BAABAAEAAAATAP3/BAABAAEAAAATAPz/BAABAAEAAAAUAPz/BAABAAEAAAAUAPv/BAABAAEAAAAUAPr/BAABAAEAAAAUAPn/BAABAAEAAAAUAPj/BAABAAEAAAAUAPf/BAABAAEAAAAVAPf/BAABAAEAAAAVAPb/BAABAAEAAAAWAPb/BAABAAEAAAATAP7/BAABAAEAAAATAP//BAABAAEAAAATAAAABAABAAEAAAATAAEABAABAAEAAAASAAEABAABAAEAAAARAAEABAABAAEAAAAQAAEABAABAAEAAAAPAAEABAABAAEAAAAOAAEABAABAAEAAAANAAEABAABAAEAAAAMAAEABAABAAEAAAALAAEABAABAAEAAAAKAAEABAABAAEAAAAJAAEABAABAAEAAAAIAAEABAABAAEAAAAHAAEABAABAAEAAAAKAAIABAABAAEAAAALAAMABAABAAEAAAALAAIABAABAAEAAAALAAQABAABAAEAAAALAAUABAABAAEAAAAKAAUABAABAAEAAAAJAAUABAABAAEAAAAIAAUABAABAAEAAAAHAAUABAABAAEAAAAGAAUABAABAAEAAAAIAAYABAABAAEAAAAIAAcABAABAAEAAAAHAAcABAABAAEAAAAHAAgABAABAAEAAAALAAYABAABAAEAAAALAAcABAABAAEAAAALAAgABAABAAEAAAAMAAUABAABAAEAAAANAAUABAABAAEAAAAOAAUABAABAAEAAAAPAAUABAABAAEAAAAQAAUABAABAAEAAAAQAAYABAABAAEAAAAQAAcABAABAAEAAAAQAAgABAABAAEAAAAUAAEABAABAAEAAAAVAAEABAABAAEAAAAVAAIABAABAAEAAAAVAAMABAABAAEAAAAVAAQABAABAAEAAAAVAAUABAABAAEAAAAUAAUABAABAAEAAAATAAUABAABAAEAAAATAAYABAABAAEAAAATAAcABAABAAEAAAAUAAcABAABAAEAAAAUAAgABAABAAEAAAAVAAgABAABAAEAAAAWAAQABAABAAEAAAAXAAQABAABAAEAAAAXAAMABAABAAEAAAAYAAMABAABAAEAAAADAAEABAABAAEAAAAMAAIABAABAAEAAAAFAAIABAABAAEAAAAFAAMABAABAAEAAAAFAAQABAABAAEAAAAFAAUABAABAAEAAAACAAEABAABAAEAAAABAAEABAABAAEAAAAAAAEABAABAAEAAAAAAAAABAABAAEAAAD//wAABAABAAEAAAARAPb/BAABAAEAAAAUAPX/BAABAAEAAAAVAPX/BAABAAEAAAALAAAABAABAAEAAAABAPT/BAABAAEAAAACAPX/BAABAAEAAAASAPv/BAABAAEAAAASAPz/BAABAAEAAAAAAPT/BAABAAEAAAABAPX/BAABAAEAAAAUAPT/BAABAAEAAAAVAPP/BAABAAEAAAAWAPP/BAABAAEAAAAXAPP/BAABAAEAAAAUAPP/BAABAAEAAAA=")
 tile_set = ExtResource("3_my5bl")
 collision_enabled = false
 
@@ -101,14 +162,17 @@ sprite_frames = ExtResource("6_47b40")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1196891219]
 process_mode = 3
-position = Vector2(-88, -21)
-zoom = Vector2(2.5, 2.5)
+position = Vector2(544, -2624)
 limit_left = 0
 limit_top = -2328
 limit_right = 1480
-limit_bottom = 712
+limit_bottom = 584
 position_smoothing_enabled = true
 editor_draw_limits = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player/Camera2D" unique_id=1886332642]
+libraries/ = SubResource("AnimationLibrary_t1yxy")
+autoplay = &"pane"
 
 [node name="EnemyGuards" type="Node2D" parent="." unique_id=1997239040]
 y_sort_enabled = true
@@ -121,21 +185,52 @@ move_speed = 150.0
 detection_area_scale = 0.4
 move_while_in_editor = true
 
+[node name="DetectionArea" parent="EnemyGuards/Guard1-GoingBackAndForth" index="3" unique_id=885694991]
+scale = Vector2(0.4, 0.4)
+
+[node name="AnimatedSprite2D" parent="EnemyGuards/Guard1-GoingBackAndForth" index="4" unique_id=616054452]
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("7_jexhp")
+autoplay = ""
+
+[node name="PlayerAwareness" parent="EnemyGuards/Guard1-GoingBackAndForth" index="6" unique_id=578256400]
+modulate = Color(1, 1, 1, 0.5)
+
 [node name="Guard2-GoingBackAndForth2" parent="EnemyGuards" unique_id=689832587 node_paths=PackedStringArray("patrol_path") instance=ExtResource("6_x4ddw")]
-position = Vector2(296, 24)
+position = Vector2(304, 50)
 sprite_frames = ExtResource("7_jexhp")
 patrol_path = NodePath("../Guard 2 - Patrol Path")
 move_speed = 200.0
 detection_area_scale = 0.5
 move_while_in_editor = true
 
+[node name="DetectionArea" parent="EnemyGuards/Guard2-GoingBackAndForth2" index="3" unique_id=885694991]
+scale = Vector2(0.5, 0.5)
+
+[node name="AnimatedSprite2D" parent="EnemyGuards/Guard2-GoingBackAndForth2" index="4" unique_id=616054452]
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("7_jexhp")
+
+[node name="PlayerAwareness" parent="EnemyGuards/Guard2-GoingBackAndForth2" index="6" unique_id=578256400]
+modulate = Color(1, 1, 1, 0.5)
+
 [node name="Guard3-GoingBackAndForth3" parent="EnemyGuards" unique_id=246535104 node_paths=PackedStringArray("patrol_path") instance=ExtResource("6_x4ddw")]
-position = Vector2(1248, -480)
+position = Vector2(352, -470)
 sprite_frames = ExtResource("7_jexhp")
 patrol_path = NodePath("../Guard3 - Patrol Path")
 move_speed = 200.0
 detection_area_scale = 0.5
 move_while_in_editor = true
+
+[node name="DetectionArea" parent="EnemyGuards/Guard3-GoingBackAndForth3" index="3" unique_id=885694991]
+scale = Vector2(0.5, 0.5)
+
+[node name="AnimatedSprite2D" parent="EnemyGuards/Guard3-GoingBackAndForth3" index="4" unique_id=616054452]
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("7_jexhp")
+
+[node name="PlayerAwareness" parent="EnemyGuards/Guard3-GoingBackAndForth3" index="6" unique_id=578256400]
+modulate = Color(1, 1, 1, 0.5)
 
 [node name="Guard4-GoingBackAndForth4" parent="EnemyGuards" unique_id=1829703731 node_paths=PackedStringArray("patrol_path") instance=ExtResource("6_x4ddw")]
 position = Vector2(224, -736)
@@ -145,13 +240,34 @@ move_speed = 200.0
 detection_area_scale = 0.4
 move_while_in_editor = true
 
+[node name="DetectionArea" parent="EnemyGuards/Guard4-GoingBackAndForth4" index="3" unique_id=885694991]
+scale = Vector2(0.4, 0.4)
+
+[node name="AnimatedSprite2D" parent="EnemyGuards/Guard4-GoingBackAndForth4" index="4" unique_id=616054452]
+position = Vector2(-1.4711914, 0)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("7_jexhp")
+
+[node name="PlayerAwareness" parent="EnemyGuards/Guard4-GoingBackAndForth4" index="6" unique_id=578256400]
+modulate = Color(1, 1, 1, 0.5)
+
 [node name="Guard5-GoingBackAndForth5" parent="EnemyGuards" unique_id=1838756983 node_paths=PackedStringArray("patrol_path") instance=ExtResource("6_x4ddw")]
-position = Vector2(608, -1064)
+position = Vector2(608, -1046)
 sprite_frames = ExtResource("7_jexhp")
 patrol_path = NodePath("../Guard 5 - Flash")
 move_speed = 600.0
 detection_area_scale = 0.4
 move_while_in_editor = true
+
+[node name="DetectionArea" parent="EnemyGuards/Guard5-GoingBackAndForth5" index="3" unique_id=885694991]
+scale = Vector2(0.4, 0.4)
+
+[node name="AnimatedSprite2D" parent="EnemyGuards/Guard5-GoingBackAndForth5" index="4" unique_id=616054452]
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("7_jexhp")
+
+[node name="PlayerAwareness" parent="EnemyGuards/Guard5-GoingBackAndForth5" index="6" unique_id=578256400]
+modulate = Color(1, 1, 1, 0.5)
 
 [node name="Guard1-PatrolPath" type="Path2D" parent="EnemyGuards" unique_id=335964649]
 top_level = true
@@ -170,6 +286,7 @@ curve = SubResource("Curve2D_jexhp")
 curve = SubResource("Curve2D_0vga2")
 
 [node name="Guard 5 - Flash" type="Path2D" parent="EnemyGuards" unique_id=1260627309]
+position = Vector2(0, -6)
 curve = SubResource("Curve2D_dyefq")
 
 [node name="Checkpoints" type="Node2D" parent="." unique_id=344631200]
@@ -190,58 +307,36 @@ debug_color = Color(0, 0, 0, 0.42)
 [node name="HUD" parent="." unique_id=1994868895 instance=ExtResource("10_1rdew")]
 
 [node name="CollectibleItem" parent="." unique_id=1779229490 instance=ExtResource("11_3s7vc")]
-position = Vector2(496, -2184)
+position = Vector2(760, -2120)
 next_scene = "uid://cg8beka1u6xff"
 item = SubResource("Resource_q6f1e")
 collected_dialogue = ExtResource("13_q3g1t")
+
+[node name="InteractArea" parent="CollectibleItem" index="0" unique_id=1327503985]
+action = "Collect Memory"
+
+[node name="Sprite2D" parent="CollectibleItem" index="2" unique_id=1620327010]
+texture = ExtResource("15_qk84u")
 
 [node name="Cinematic" type="Node2D" parent="." unique_id=859706882]
 script = ExtResource("14_4qmlq")
 dialogue = ExtResource("15_jpd26")
 metadata/_custom_type_script = "uid://x1mxt6bmei2o"
 
-[node name="Background" type="Node2D" parent="." unique_id=2069396300]
-
-[node name="Background" type="Parallax2D" parent="Background" unique_id=1057679118]
-z_index = -20
-scroll_scale = Vector2(0.9, 0.9)
-scroll_offset = Vector2(640, -544)
-repeat_size = Vector2(768, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="Background/Background" unique_id=214666532]
-position = Vector2(512, -336)
-texture = ExtResource("17_my5bl")
-
-[node name="BosqueFrente" type="Parallax2D" parent="Background" unique_id=883960030]
-z_index = -10
-scroll_scale = Vector2(0.8, 0.8)
-
-[node name="0ForestParallaxVerticalForestTreeFront" type="Sprite2D" parent="Background/BosqueFrente" unique_id=1813412493]
-position = Vector2(808, -1096)
-texture = ExtResource("18_x4ddw")
-
-[node name="BosqueMedio" type="Parallax2D" parent="Background" unique_id=1321577967]
-z_index = -11
-scroll_scale = Vector2(0.6, 0.6)
-
-[node name="1ForestParallaxVerticalForestLow" type="Sprite2D" parent="Background/BosqueMedio" unique_id=1385722715]
-position = Vector2(808, -1104)
-texture = ExtResource("19_jexhp")
-
-[node name="BosqueAtras" type="Parallax2D" parent="Background" unique_id=1354778313]
-z_index = -12
-scroll_scale = Vector2(0.4, 0.4)
-scroll_offset = Vector2(32, 0)
-
-[node name="2ForestParallaxVerticalForestMid" type="Sprite2D" parent="Background/BosqueAtras" unique_id=22286052]
-position = Vector2(800, -1160)
-texture = ExtResource("20_0vga2")
+[node name="Background" parent="." unique_id=12175332 instance=ExtResource("17_my5bl")]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=790045369]
 visible = false
 z_index = -4
 position = Vector2(936, -1344)
 scale = Vector2(21.82818, 15.747371)
-texture = ExtResource("21_jexhp")
+texture = SubResource("CompressedTexture2D_qk84u")
 region_enabled = true
 region_rect = Rect2(511, 310, 291, 285)
+
+[editable path="EnemyGuards/Guard1-GoingBackAndForth"]
+[editable path="EnemyGuards/Guard2-GoingBackAndForth2"]
+[editable path="EnemyGuards/Guard3-GoingBackAndForth3"]
+[editable path="EnemyGuards/Guard4-GoingBackAndForth4"]
+[editable path="EnemyGuards/Guard5-GoingBackAndForth5"]
+[editable path="CollectibleItem"]

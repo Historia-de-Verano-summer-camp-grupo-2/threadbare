@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xxoaf0yme3rc"
-path="res://.godot/imported/atlas.png-c207c4bbd666cdfd1a428187040ff687.ctex"
+uid="uid://cdgtxrfwrd4id"
+path="res://.godot/imported/player-run-4.png-f07449d0bb88b490500f54463bcbe08b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/historia_de_verano/assets/tiles/atlas.png"
-dest_files=["res://.godot/imported/atlas.png-c207c4bbd666cdfd1a428187040ff687.ctex"]
+source_file="res://scenes/quests/story_quests/historia_de_verano/assets/enemies/walk/player-run-4.png"
+dest_files=["res://.godot/imported/player-run-4.png-f07449d0bb88b490500f54463bcbe08b.ctex"]
 
 [params]
 

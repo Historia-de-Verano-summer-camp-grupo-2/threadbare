@@ -4,11 +4,9 @@
 ~ start
 do animation_player.play(&"walk_on")
 do animation_player.animation_finished
-Welcome to the StoryQuest template, where you'll learn how to mod elements of each scene and create your own StoryQuest! Let's start with the intro.
-In the Godot FileSystem, find the intro folder and double-click on the intro dialogue file to edit the text.
-Press enter to add a new line. Each line becomes a new dialogue box in-game.
-Select Cinematic node; drag your StoryQuest dialogue to the "Dialogue" field in the Inspector.
-Set the next scene using the "Next Scene" field in the Inspector.
+Era un día tranquilo de verano. Nuestro pequeño gato caminaba sin rumbo, disfrutando del sol y del silencio de aquel lugar.
+Hasta que algo llamó su atención. Allí arriba, entre las ramas de un árbol, un pequeño hilo rojo se balanceaba suavemente con el viento.
+Para cualquiera sería solo un hilo. Pero para un gato curioso era una invitación imposible de ignorar. Tal vez no era nada especial, O tal vez escondía algo más... 
 do animation_player.play(&"walk_off")
-Explore other elements to mod, like the placeholder image, tile map, and animation options for this scene!
+Sin pensarlo demasiado,decidió subir a buscarlo. Y así, movido por su curiosidad,comenzó una pequeña aventura que lo llevaría mucho más lejos de lo que imaginaba.
 => END

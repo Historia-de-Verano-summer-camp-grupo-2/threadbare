@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://ctwx8gghts62p" path="res://assets/third_party/tiny-swords/Deco/06.png" id="2_qsbjv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kw7av"]
-height = 42.0
+radius = 27.000004
+height = 84.00001
 
 [node name="Rock" type="StaticBody2D" unique_id=1319147835]
 collision_layer = 16
@@ -11,9 +12,11 @@ collision_mask = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1310606653]
 unique_name_in_owner = true
+position = Vector2(-9, 3.000002)
+scale = Vector2(1.8125, 1.75)
 texture = ExtResource("2_qsbjv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2100829996]
-position = Vector2(3, 7)
+position = Vector2(-5, 4)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_kw7av")

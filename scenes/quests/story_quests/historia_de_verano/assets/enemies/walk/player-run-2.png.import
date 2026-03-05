@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfap0yvyt3m2y"
-path="res://.godot/imported/Gemini_Generated_Image_3hcn5x3hcn5x3hcn.png-9185668322bb6074b11cc9a86936cc0f.ctex"
+uid="uid://crmjdrf504ya2"
+path="res://.godot/imported/player-run-2.png-981e71558fc4775ba781356e8f1a17f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/historia_de_verano/assets/tiles/Gemini_Generated_Image_3hcn5x3hcn5x3hcn.png"
-dest_files=["res://.godot/imported/Gemini_Generated_Image_3hcn5x3hcn5x3hcn.png-9185668322bb6074b11cc9a86936cc0f.ctex"]
+source_file="res://scenes/quests/story_quests/historia_de_verano/assets/enemies/walk/player-run-2.png"
+dest_files=["res://.godot/imported/player-run-2.png-981e71558fc4775ba781356e8f1a17f8.ctex"]
 
 [params]
 
