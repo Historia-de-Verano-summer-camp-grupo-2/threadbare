@@ -16,7 +16,7 @@
 [ext_resource type="Resource" uid="uid://bprjvghal3c48" path="res://scenes/quests/story_quests/historia_de_verano/1_stealth/stealth_components/historia_de_verano_collected.dialogue" id="13_q3g1t"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="14_4qmlq"]
 [ext_resource type="Resource" uid="uid://dqw4xvejdh5od" path="res://scenes/quests/story_quests/historia_de_verano/1_stealth/stealth_components/historia_de_verano_stealth.dialogue" id="15_jpd26"]
-[ext_resource type="Texture2D" uid="uid://5wscjc8yqqts" path="res://assets/first_party/collectibles/world_memory.png" id="15_qk84u"]
+[ext_resource type="Texture2D" uid="uid://cepg1o3ihp055" path="res://assets/first_party/collectibles/world_spirit.png" id="15_x4ddw"]
 [ext_resource type="PackedScene" uid="uid://bwxfbqq2dm5ax" path="res://scenes/quests/story_quests/historia_de_verano/1_stealth/background.tscn" id="17_my5bl"]
 [ext_resource type="Texture2D" uid="uid://bm4lrj5nnr4uv" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/4-1 Forest parallax vertical forest moon big.png" id="19_t1yxy"]
 [ext_resource type="Texture2D" uid="uid://baelulw1inl6s" path="res://assets/third_party/tiny-swords/Deco/09.png" id="20_x4ddw"]
@@ -436,7 +436,7 @@ debug_color = Color(0, 0, 0, 0.42)
 [node name="HUD" parent="." unique_id=1994868895 instance=ExtResource("10_1rdew")]
 
 [node name="CollectibleItem" parent="." unique_id=1779229490 instance=ExtResource("11_3s7vc")]
-position = Vector2(808, -2088)
+position = Vector2(800, -2120)
 next_scene = "uid://ced6xnr7wtvvs"
 item = SubResource("Resource_q6f1e")
 collected_dialogue = ExtResource("13_q3g1t")
@@ -445,7 +445,7 @@ collected_dialogue = ExtResource("13_q3g1t")
 action = "Collect Memory"
 
 [node name="Sprite2D" parent="CollectibleItem" index="2" unique_id=1620327010]
-texture = ExtResource("15_qk84u")
+texture = ExtResource("15_x4ddw")
 
 [node name="Cinematic" type="Node2D" parent="." unique_id=859706882]
 script = ExtResource("14_4qmlq")
