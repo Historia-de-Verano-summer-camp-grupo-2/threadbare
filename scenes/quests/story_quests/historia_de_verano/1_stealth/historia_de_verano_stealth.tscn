@@ -166,7 +166,7 @@ position = Vector2(544, -2624)
 limit_left = 0
 limit_top = -2328
 limit_right = 1480
-limit_bottom = 584
+limit_bottom = 576
 position_smoothing_enabled = true
 editor_draw_limits = true
 
@@ -308,7 +308,7 @@ debug_color = Color(0, 0, 0, 0.42)
 
 [node name="CollectibleItem" parent="." unique_id=1779229490 instance=ExtResource("11_3s7vc")]
 position = Vector2(760, -2120)
-next_scene = "uid://cg8beka1u6xff"
+next_scene = "uid://ced6xnr7wtvvs"
 item = SubResource("Resource_q6f1e")
 collected_dialogue = ExtResource("13_q3g1t")
 
