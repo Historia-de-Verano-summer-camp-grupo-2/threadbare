@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cycbns0dl1i27"]
+
+[ext_resource type="Texture2D" uid="uid://dahet56207utp" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/allbackgroundstars.png" id="1_ndnff"]
+[ext_resource type="Texture2D" uid="uid://bros88j71s0sp" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/0 Forest parallax vertical forest tree front.png" id="2_7d8oh"]
+[ext_resource type="Texture2D" uid="uid://7oxigfslsjip" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/1 Forest parallax vertical forest low.png" id="3_ju13m"]
+[ext_resource type="Texture2D" uid="uid://dg12fa3hp8mq4" path="res://scenes/quests/story_quests/historia_de_verano/assets/background/2 Forest parallax vertical forest mid.png" id="4_l41w8"]
+
+[node name="Background" type="Node2D" unique_id=242903471]
+
+[node name="Background" type="Parallax2D" parent="." unique_id=1438172894]
+z_index = -20
+scroll_scale = Vector2(0.9, 0.9)
+scroll_offset = Vector2(640, -544)
+repeat_size = Vector2(768, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background" unique_id=525586549]
+position = Vector2(512, -336)
+texture = ExtResource("1_ndnff")
+
+[node name="BosqueFrente" type="Parallax2D" parent="." unique_id=1260471106]
+z_index = -10
+scroll_scale = Vector2(0.8, 0.8)
+
+[node name="0ForestParallaxVerticalForestTreeFront" type="Sprite2D" parent="BosqueFrente" unique_id=1663735898]
+position = Vector2(808, -1096)
+texture = ExtResource("2_7d8oh")
+
+[node name="BosqueMedio" type="Parallax2D" parent="." unique_id=1326396228]
+z_index = -11
+scroll_scale = Vector2(0.6, 0.6)
+
+[node name="1ForestParallaxVerticalForestLow" type="Sprite2D" parent="BosqueMedio" unique_id=1738889597]
+position = Vector2(808, -1104)
+texture = ExtResource("3_ju13m")
+
+[node name="BosqueAtras" type="Parallax2D" parent="." unique_id=385560916]
+z_index = -12
+scroll_scale = Vector2(0.4, 0.4)
+scroll_offset = Vector2(32, 0)
+
+[node name="2ForestParallaxVerticalForestMid" type="Sprite2D" parent="BosqueAtras" unique_id=612151197]
+position = Vector2(800, -1160)
+texture = ExtResource("4_l41w8")

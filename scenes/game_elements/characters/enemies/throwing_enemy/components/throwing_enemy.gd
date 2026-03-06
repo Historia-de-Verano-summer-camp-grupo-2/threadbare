@@ -271,6 +271,7 @@ func _on_timeout() -> void:
 
 func shoot_projectile() -> void:
 	var player: Player = get_tree().get_first_node_in_group("player")
+	
 	if not allowed_labels:
 		_is_attacking = false
 		return

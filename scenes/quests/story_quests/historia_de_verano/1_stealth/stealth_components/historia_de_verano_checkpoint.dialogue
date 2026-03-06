@@ -1,6 +1,10 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
 ~ start
-KnitWitch: This is a checkpoint that can be used to save player progress.
-{{player_name}}: Thanks!
+Costurera: Pss...Gato... esos guardias son muy molestos... mi hilo dorado te ayudará a recordar tu camino hasta aquí si te atrapan...
+Gato: Que conveniente... gracias supongo...
+=> END
+~ segundo
+Costurera: Pss... Gato... ya casi alcanzas la cima ¡No te rindas!
+Gato: Gracias por el apoyo... supongo...
 => END

@@ -255,7 +255,8 @@ autoplay = "idle"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1703300754]
-rotation = -1.5708
+position = Vector2(-24, -32)
+rotation = 3.1415927
 shape = SubResource("CapsuleShape2D_3vyb7")
 
 [node name="Timer" type="Timer" parent="." unique_id=2084913349]
@@ -265,7 +266,7 @@ wait_time = 5.0
 
 [node name="ProjectileMarker" type="Marker2D" parent="." unique_id=60650531]
 unique_name_in_owner = true
-position = Vector2(-35, -31)
+position = Vector2(-48, -32)
 
 [node name="HitBox" type="Area2D" parent="." unique_id=1709759726]
 unique_name_in_owner = true
